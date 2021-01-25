@@ -23,7 +23,7 @@ Do you like dogs?
 [Q3] The only way you would be able to reach this question is if you answer "no" to liking dog.  Skip logic took people who answer "yes" away to the next question.  We could ask a few questions to follow up on why you don't like dogs.
 
 Clearly, you suffered some like of trama as a child that would explain why you don't like dogs. Can you explain what could possible turn you against the animal so filled with love and devotion to humans? 
-[textbox:lameResponse]
+|___|lameResponse|
 
 [Q3A] {$firstName}, {$lameResponse} is not a good enough excuse.  Are you willing to acknowledge that you are wrong
 (1) yes
