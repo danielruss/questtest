@@ -1,0 +1,8 @@
+[INTRO_TEST]
+This is a my first example of module.  If you want in-depth documentation on the wiki, please see: https://github.com/episphere/quest/wiki
+
+[Q1] What is your first name? |__|id=firstName|
+
+# this is a comment.
+[Q2] Hello {$firstName}! Do you like dogs?
+(1) yes (2) no
