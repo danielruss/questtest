@@ -1,8 +1,17 @@
 [INTRO_TEST]
-This is a my first example of module.  If you want in-depth documentation on the wiki, please see: https:&sol;&sol;github.com/episphere/quest/wiki
+This is a my first example of module.  If you want in-depth documentation on the wiki, please see: 
+https:&sol;&sol;github.com/episphere/quest/wiki
 
-[Q1] What is your first name? |__|id=firstName|
+This questionnaire will ask a series of unrelated questions.  The responses will be saved in your browser, but not collected by a server.  As a matter of fact, this entire questionnaire is serverless.  All work is performed by your machine and no data is every transmitted.  Probably not what you would want for an epidemiologic study, but the Quest tool is a questionnaire development tool.  You would want to write a small PWA that calls the render function of Quest to display questions, and collect the responses at the end of the module.  Since this is just a test, the results are never collected.
+
+Have Fun...
+Daniel
+
+[Q1!] What is your first name? |__|id=firstName|
 
 # this is a comment.
-[Q2] Hello {$firstName}! Do you like dogs?
+[Q2] Hello {$firstName}! 
+In order to show you some of the features of quest, I'm going to ask you a few questions.  (Did you notice that I used your response from the first question in this question?)  
+
+Do you like dogs?
 (1) yes (2) no
