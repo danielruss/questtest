@@ -11,7 +11,7 @@ Daniel
 
 [Q1!] What is your first name? |__|id=firstName|
 
-# this is a comment.
+// this is a comment.
 [Q2!] Hello {$firstName}! 
 In order to show you some of the features of quest, I'm going to ask you a few questions.  (Did you notice that I used your response from the first question in this question? Pretty cool)  
 
