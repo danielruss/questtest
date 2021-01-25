@@ -25,7 +25,7 @@ Do you like dogs?
 Clearly, you suffered some like of trama as a child that would explain why you don't like dogs. Can you explain what could possible turn you against the animal so filled with love and devotion to humans? 
 |___|lameResponse|
 
-[Q3A] {$firstName}, {$lameResponse} is not a good enough excuse.  Are you willing to acknowledge that you are wrong
+[Q3A] {$firstName}, <i><b>{$lameResponse}</b></i> is not a good enough excuse.  Are you willing to acknowledge that you are wrong
 (1) yes
 (0) no
 
@@ -34,8 +34,32 @@ Clearly, you suffered some like of trama as a child that would explain why you d
 {$firstName}, what is your last name also known as your family name?
 |__|id=lastName|
 
+// if you have no children, skip completely over the loop.
+[Q5!] {$firstName}, Do you have any children?
+(1) yes
+(0) no -> setofquestions1
 
-[THANKYOU]  Well, that's about all the time we have.  {$firstName} {$lastName}, you've been a great sport to answer all my questions.  If you want to clear the results. You can
+// since you have kids the minimum number of kid=1
+// I don't want more than 10 kids... really!!!!
+[Q6!] How many children do you have?
+|__|__|id=num_kids max=10 min=1|
+
+<loop max=10>
+
+[CHILD1?|firstquestion=#loop loopmax=num_kids|] What is your |displayif=greaterThan(#loop,1)|next |oldest child's name?
+|__|id=kidName|  
+
+[CHILD2] Is {$kidName} allergic to peanuts?
+(1) Yes
+(0) No
+
+</loop>
+
+|grid|id=setofquestions1|Sometimes you absolutely need to show multiple questions with the same set of responses on a single page.  Often, a grid is used to save space and to allow a participant to see all the questions and all the responses at the same time.  Grids might have been great for paper questionnaires, but they are not ideal for web-based questionnaires, particularly if the participant is using a cell phone.  Our grids are mobile-first and use CSS to display a grid if the screen is large, and individual questions on the same page if the screen is small.  This is not my favorite, but if you need it as a requirement, enjoy. <p> You can probably see some of the problem with grid even with this simple example. If you make the size of the window small, the reactive design with change from a grid to a list of question (Thanks to CSS) </p>|[ [ROW1QUESTIONID] How often do you chew gum;[ROW2QUESTIONID] How often do you smoke; [ROW3QUESTIONID] How often do you drink alcohol;]|(0:never) (1:sometimes) (2:occasionally) (3:often) (4:everyday) (5:multiple times a day) |
+
+[THANKYOU]  Well, that's about all the time we have.  
+
+{$firstName} {$lastName}, you've been a great sport to answer all my questions.  If you want to clear the results. You can
 <ul>
   <li> click the "Clear Memory" button on in quest (up and to the right), or
   <li> clear the memory from the developer window <ol>
