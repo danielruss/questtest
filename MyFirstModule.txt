@@ -31,5 +31,18 @@ Clearly, you suffered some like of trama as a child that would explain why you d
 
 [Q4!] Whether or not you like dogs, everyone should see this question.
 
-${firstName}, what is your last name also known as your family name?
+{$firstName}, what is your last name also known as your family name?
 |__|id=lastName|
+
+
+[THANKYOU]  Well, that's about all the time we have.  {$firstName} {$lastName}, you've been a great sport to answer all my questions.  If you want to clear the results. You can
+<ul>
+  <li> click the "Clear Memory" button on in quest (up and to the right), or
+  <li> clear the memory from the developer window <ol>
+     <li> go to the developer window F12
+     <li> select application
+     <li> open IndexedDB under storage
+     <li> click on "localforage - https:&sol;/episphere.github.io 
+     <li> select delete database. </ol>
+ </ul>
+ 
