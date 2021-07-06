@@ -1,2 +1,31 @@
 {"name":"BugFix"}
 [Q1] THIS IS A TEST
+\
+    
+[D_479353866!] To start, please tell us a bit about yourself.
+
+
+Based on the information you provided when you enrolled in this study, you are {$u:age} years old today. Is that correct?
+(104430631) No -> D_150344905
+(353358909) Yes -> D_783167257
+
+
+[D_150344905!] How old are you today?
+Age: |__|__|min=40 max=70|
+
+
+[D_114314839?] How tall are you with your shoes off?
+|__|__|id=D_340854069 min=0 max=10| Feet
+|__|__|id=D_600462977 min=0 max=11| Inches
+< #NR -> D_677262300 >
+ 
+[D_677262300?] How old were you when you reached your adult height? If you are not sure, please make your best guess.
+|__|__|min=0 max=isDefined(D_150344905,age)| Age
+< #NR -> D_650399623 >
+ 
+[D_650399623?] When you were about 10 years old, compared to average, would you describe yourself as…
+(325478778) Shorter than average
+(730757606) About average height
+(897599966) Taller than average
+< #NR -> D_820324171 >
+
