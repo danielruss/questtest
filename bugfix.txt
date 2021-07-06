@@ -1,6 +1,5 @@
 {"name":"BugFix"}
 [Q1] THIS IS A TEST
-\
     
 [D_479353866!] To start, please tell us a bit about yourself.
 
