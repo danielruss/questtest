@@ -1,0 +1,10 @@
+[INTRO] Testing the xor_bug
+
+[XORTESTQUESTION] How many time per day do you change your socks? |__|id="socksperday" xor="sockchange"|
+
+or if you find it easier
+
+How many time per week do you change your socks? |__|id="socksperweek" xor="sockchange"|
+
+
+[ALLDONE,end="end"] Thank you!! 
