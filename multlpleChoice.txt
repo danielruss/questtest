@@ -1,0 +1,38 @@
+[ICE_CREAM_FLAVOR]  
+Which of the following flavors do you like
+[1111] Vanilla -> V1
+[2222] Chocolate -> C1
+[3] Strawberry -> S1
+< -> MYSTATE >
+
+[V1] So, you like vanilla ice cream.  
+
+Do you like mix-ins in your vanilla ice cream?
+(1) Always
+(2) Occasionally
+(3) Sometime
+(4) Rarely
+(5) Never
+(6) I choose to invoke the protection under the 5th Amendment
+
+[C1] You like chocolate ice cream.  Excellent Choice.
+
+Do you like chocolate chips in your chocolate ice cream?
+(1) Yes
+(0) No
+< -> C2 >
+
+[C2] Do you like chocolate syrup on top of your chocolate ice cream
+(1) Yes
+(0) No
+
+[S1] What is wrong with you? |___|
+
+[MYSTATE] What is your favorite state |state|
+
+[OLDTEXTBOX] This question was added in order to have a text box.
+
+Describe why you like testing online questionnaires:
+[text box:wtf]
+
+[DONE] All Done
